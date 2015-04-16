@@ -82,7 +82,7 @@ angular.module('cgNotify', []).factory('notify',['$timeout','$http','$compile','
                 var layoutMessages = function(){
                     var j = 0;
                     var currentY = startTop;
-                    for(var i = messageElements.length - 1; i >= 0; i --){
+                    for(var i = 0; i < messageElements.length; i ++){
                         var shadowHeight = 0;
                         var element = messageElements[i];
                         var height = element[0].offsetHeight;
